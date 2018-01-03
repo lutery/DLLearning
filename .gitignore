@@ -1,1 +1,17 @@
 *.dll
+Demo2/x64/Debug/traning_data_x
+Demo2/x64/Debug/test_data_y
+Demo2/x64/Debug/test_data_x
+Demo2/x64/Debug/traning_data_y
+Demo2/x64/Release/test_data_x
+Demo2/x64/Release/test_data_y
+Demo2/x64/Release/traning_data_x
+Demo2/x64/Release/traning_data_y
+Demo2/Demo2/traning_data_x
+Demo2/Demo2/traning_data_y
+Demo2/Demo2/test_data_x
+Demo2/Demo2/test_data_y
+Demo2/Demo2/traning_data.rar
+Demo2/Demo2/dldata.bin
+Demo2/Demo2/dldata1.bin
+*.rar

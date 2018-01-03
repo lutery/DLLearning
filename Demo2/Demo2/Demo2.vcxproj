@@ -75,16 +75,16 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\DevelopmentKit\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\DevelopmentKit\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\DevelopmentKit\boost_1_66_0;D:\DevelopmentKit\opencv\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\DevelopmentKit\opencv\build\x64\vc14\lib;C:\Program Files\Python36\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\DevelopmentKit\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\DevelopmentKit\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\DevelopmentKit\boost_1_66_0;D:\DevelopmentKit\opencv\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\DevelopmentKit\opencv\build\x64\vc14\lib;C:\Program Files\Python36\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -107,10 +107,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>D:\DevelopmentKit\range-v3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\DevelopmentKit\boost_1_66_0\bin\vc141-x64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -140,12 +143,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>D:\DevelopmentKit\range-v3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\DevelopmentKit\boost_1_66_0\bin\vc141-x64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
